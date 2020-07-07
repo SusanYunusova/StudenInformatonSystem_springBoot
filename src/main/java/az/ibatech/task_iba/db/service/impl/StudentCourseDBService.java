@@ -14,6 +14,7 @@ public class StudentCourseDBService  implements MySqlDBService<StudentCourse> {
 
     @Override
     public boolean delete(StudentCourse studentCourse) {
+
         return false;
     }
 
