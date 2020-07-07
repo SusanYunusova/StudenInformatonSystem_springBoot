@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: task_iba
+  datasource:
+    url: jdbc:mysql://localhost:3306/task_iba?createDatabaseIfNotExist=true&useUnicode=yes&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+
+      ddl-auto: update
+    show-sql: true
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths: /**
+
+
+server:
+  port: 5858
