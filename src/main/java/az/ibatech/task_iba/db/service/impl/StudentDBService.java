@@ -48,7 +48,7 @@ public class StudentDBService implements MySqlDBService<Student> {
     @Override
     public Optional<Student> getById(long idStudent) {
         try {
-            log.info("trying to get user by id from db");
+            log.info("trying to get student by id from db");
             return studentRepository.findByIdStudent(idStudent);
         } catch (Exception e) {
             log.error("error getting by idStudent from Db{}{}", e, e);
@@ -59,7 +59,7 @@ public class StudentDBService implements MySqlDBService<Student> {
     @Override
     public List<Student> getAll() {
         try {
-            log.info("trying to getAll users from db");
+            log.info("trying to getAll students from db");
             return studentRepository.findAll();
         } catch (Exception e) {
             log.error("error getting all from db{}{}", e, e);
